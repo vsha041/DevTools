@@ -12,15 +12,22 @@
     <ul class="collection center-align flow-text">
       <li class="collection-item">Step (F9)</li>
       <li class="collection-item">Restart Function</li>
-      <li class="collection-item">Continue to here</li>      
+      <li class="collection-item">Continue to here</li>
     </ul>
   </div>
   <script type="application/javascript">
-    var add = function (a, b) {
-      console.log("a is " + a);
-      console.log("the sum of " + a + " and " + b + " is " + (a + b));
-      console.log("b is " + b);
-    }
+    function fibonacci(number) {
+      var previous_first = 0;
+      var previous_second = 1;
+      var next = 1;
+
+      for (var i = 2; i <= number; i++) {
+        next = previous_first + previous_second;
+        previous_first = previous_second;
+        previous_second = next;
+      }
+      return next;
+    };
 
     console.log("start");
 
@@ -28,7 +35,7 @@
     console.log(2);
     console.log(3);
 
-    add(1, 56);
+    var result = fibonacci(4);
 
     console.log("finished");
 
