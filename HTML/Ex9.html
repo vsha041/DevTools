@@ -10,16 +10,44 @@
     <link href="..\CSS\custom.css" rel="stylesheet">
     <link href="..\CSS\icon.css" rel="stylesheet">
     <link href="..\CSS\materialize.min.css" rel="stylesheet">
+    <script type="application/javascript" src="..\scripts\jquery-3.3.1.min.js"></script>
     <script type="application/javascript" src="..\scripts\materialize.min.js"></script>
     <div class="container center-align">
         <h1 class="center-align" style="font-size: 3.68rem;">
-                Local Overrides
+            Local Overrides
         </h1>
         <a href="Ex8.html" style="margin-right: 50px; font-size: 2.68rem;">Prev</a>
         <a href="Ex10.html" style="margin-left: 50px; font-size: 2.68rem;">Next</a>
     </div>
-    
+
     <hr />
+    <div class="container">
+        <div class="center-align">
+
+            <div class="row">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Enter a positive number" id="inputNum" type="text" class="validate" style="font-size: 35px">
+
+                    </div>
+                    <div class="input-field col s6 flow-text" id="output">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <button class="btn waves-effect waves-light" type="submit" id="btnCheckPrime" name="action">
+                            Is Prime
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="application/javascript" src="..\scripts\PrimeChecker.js"></script>
+    <script type="application/javascript" src="..\scripts\primeTest.js"></script>
+    <script type="application/javascript" src="..\scripts\isPrime.js"></script>
+    <script type="application/javascript" src="..\scripts\primeButtonEventHandler.js"></script>
     </script>
 </body>
 
